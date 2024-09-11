@@ -7,7 +7,7 @@ require 'includes/init.php';
 
     <div class="container-fluid">
         <h2 id="title" data-testid="title">Website code</h2>
-        <p><strong>&#x21E8; </strong><a class="link-underline-opacity-0" target="_blank" rel="noopener noreferrer" href="https://github.com/doctorbeyrut">github</a></p>
+        <p><strong>&#x21E8; </strong><a class="link-underline-opacity-0" target="_blank" rel="noopener noreferrer" href="https://github.com/doctorbeyrut/beyrut-php/blob/main/index.php">github</a></p>
 
         <pre>
             <p class="text-start">php</p>
