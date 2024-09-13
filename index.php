@@ -17,6 +17,10 @@ require 'includes/header.php';
                 <h2 class="h2"><a class="link-underline-dark link-underline-opacity-0" id="php_link" data-testid="php_link" href="website.php">Php</a></h2>
                 <p>Sample code used on this website</p>
             </li>
+            <li>
+                <h2 class="h2"><a class="link-underline-dark link-underline-opacity-0" id="github_link" data-testid="github_link" href="https://github.com/doctorbeyrut" target="_blank" rel="noopener noreferrer">Github</a></h2>
+                <p>Full repos</p>
+            </li>
     </ul>
 </div>
 

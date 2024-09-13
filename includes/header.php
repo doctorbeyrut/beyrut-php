@@ -23,6 +23,7 @@
                     <li class="nav-item"><a class="nav-link" id="selenium_btn" data-testid="home_btn" href="/selenium.php">Selenium</a></li>
                     <li class="nav-item"><a class="nav-link" id="api_btn" data-testid="home_btn" href="/api.php">API</a></li>
                     <li class="nav-item"><a class="nav-link" id="php_btn" data-testid="home_btn" href="/website.php">Php</a></li>
+                    <li class="nav-item"><a class="nav-link" id="github" data-testid="github" href="https://github.com/doctorbeyrut" target="_blank" rel="noopener noreferrer">Github</a></li>
                     <?php if (Auth::isLoggedIn()) : ?>
                         <li class="nav-item"><a class="nav-link" id="posts_btn" data-testid="admin_btn" href="/posts.php">Posts</a></li>
                         <li class="nav-item"><a class="nav-link" id="admin_btn" data-testid="admin_btn" href="/admin/">Admin</a></li>

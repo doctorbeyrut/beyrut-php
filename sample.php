@@ -1,21 +1,19 @@
 <?php
 
-require '../includes/init.php';
+require 'includes/init.php';
 
-Auth::requireLogin();
-
-$conn = require '../includes/db.php';
+$conn = require 'includes/db.php';
 
 if (isset($_GET['id'])) {
 
-    $article = Article::getWithCategories($conn, $_GET['id']);
+    $article = Article::getWithCategories($conn, $_GET['id'], true);
 
 } else {
     $article = null;
 }
 
 ?>
-<?php require '../includes/header.php'; ?>
+<?php require 'includes/header.php'; ?>
 
     <?php if ($article): ?>
 
@@ -37,19 +35,10 @@ if (isset($_GET['id'])) {
             <p id="content" data-testid="content"><?= htmlspecialchars($article[0]['content']); ?></p>
         </article>
 
-        <?php if (Auth::isLoggedIn()): ?>
-
-            <div class="btn-group" role="group" aria-label="Editing buttons">
-            <a class="btn btn-outline-warning btn-sm" id="edit_btn" data-testid = "edit_btn" href="edit_article.php?id=<?= $article[0]['id']; ?>">Edit</a>
-            <a class="btn btn-outline-warning btn-sm" id="edit_image" data-testid = "edit_image" href="edit_article_image.php?id=<?= $article[0]['id']; ?>">Edit image</a>
-            <a class="btn btn-outline-warning btn-sm delete" class="delete" id="delete_btn" data-testid = "delete_btn" href="delete_article.php?id=<?= $article[0]['id']; ?>">Delete</a>
-            </div>
-            <a class="btn btn-outline-warning btn-sm" id="backBtn" data-testid = "backBtn" href="/admin">Back</a>
-
-        <?php endif; ?>
+        <a class="btn btn-outline-warning btn-sm" id="backBtn" data-testid = "backBtn" href="/">Back</a>
 
     <?php else: ?>
         <p>No posts found.</p>
     <?php endif; ?>
 
-<?php require '../includes/footer.php'; ?>
+<?php require 'includes/footer.php'; ?>
