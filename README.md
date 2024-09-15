@@ -1,1 +1,1 @@
-PHP/HTML code for beyrut.pl.
+PHP/HTML code for the website beyrut.pl
